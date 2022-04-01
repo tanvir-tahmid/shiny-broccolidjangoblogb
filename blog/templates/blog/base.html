@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/css/blog.css' %}">
+</head>
+
+<body>
+    <header class="o-box c-site-header">
+        <nav class="o-max-width c-site-nav">
+            <a class="c-site-nav__link c-site-nav__wordmark" href="/">Blog</a>
+        </nav>
+    </header>
+
+    <main class="o-max-width o-site-main">
+
+    {% block content %}
+    {% endblock %}
+    </main>
+
+</body>
+
+</html>
